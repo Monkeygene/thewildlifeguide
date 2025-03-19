@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>The Wildlife Guide</title>
+
+  <!-- Meta Description for SEO -->
+  <meta name="description" content="Join The Wildlife Guide for thrilling African adventures! Explore wildlife, birding, and safari experiences across South and East Africa.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/logo/african-safaris-the-wildlife-guide-favicon.webp" type="image/webp">
+
+  <!-- Open Graph for Social Sharing -->
+  <meta property="og:title" content="African Adventures with The Wildlife Guide">
+  <meta property="og:description" content="Explore the wild with expert-guided safaris across Africa.">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <meta property="og:url" content="https://www.thewildlifeguide.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card for Better Social Media Preview -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="African Adventures with The Wildlife Guide">
+  <meta name="twitter:description" content="Expert-guided safaris & birding tours across Africa.">
+  <meta name="twitter:image" content="assets/images/twitter-image.jpg">
+
+  <!-- Preload Stylesheet -->
+  <link rel="preload" href="assets/css/styles.css" as="style">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+
+  <!--Apple Touch Icons & Manifest for Mobile Devices-->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+<link rel="manifest" href="assets/site.webmanifest">
+
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- CSS -->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- TAGS -->
+
+   <!-- Canonical Tag -->
+  <link rel="canonical" href="https://www.thewildlifeguide.com">
+
+
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="bg-white shadow h-[100px] flex items-center justify-between px-8 relative">
+     <!-- Title with logo and homepage link -->
+    <a href="index.html" class="flex items-center space-x-3 text-2xl font-bold text-stone-900 hover:text-red-700 transition duration-300">
+        <img src="assets/images/logo/thewildlifeguide-favicon-black.svg" alt="Logo" class="h-10 w-10"> 
+        <span>The Wildlife Guide</span>
+    </a>
+    
+    <!-- Hamburger Button -->
+    <button id="menu-button" class="focus:outline-none" aria-label="Open menu">
+      <div class="space-y-1 transition-transform duration-300 ease-in-out">
+        <span class="block w-8 h-1 bg-stone-900 rounded transition-all duration-300" id="bar1"></span>
+        <span class="block w-8 h-1 bg-stone-900 rounded transition-all duration-300" id="bar2"></span>
+        <span class="block w-8 h-1 bg-stone-900 rounded transition-all duration-300" id="bar3"></span>
+      </div>
+    </button>
+
+    <!-- Sidebar -->
+    <div id="sidebar-overlay" class="hidden fixed inset-0 bg-black bg-opacity-30"></div>
+    
+    <div id="sidebar" class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full lg:block transition-transform duration-300">
+      <div class="p-6">
+        <h2 class="text-xl font-bold mb-4">Menu</h2>
+        <ul class="space-y-3">
+          <!-- Experiences -->
+          <li>
+            <button id="experiences-button" class="w-full text-left text-stone-900 hover:text-red-700 flex justify-between items-center transition duration-300">
+              Experiences
+              <span id="experiences-icon" class="transition-transform duration-300">▼</span>
+            </button>
+            <ul id="experiences-menu" class="pl-4 mt-2 space-y-2 hidden transition-all duration-300">
+              <li><a href="kruger-national-park-safaris-classic.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Classic Kruger Safaris</a></li>
+              <li><a href="kruger-national-park-safaris-private.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Private Kruger Safaris</a></li>
+            </ul>
+          </li>
+
+          <!-- Guide -->
+          <li>
+            <button id="guide-button" class="w-full text-left text-stone-900 hover:text-red-700 flex justify-between items-center transition duration-300">
+              Guide
+              <span id="guide-icon" class="transition-transform duration-300">▼</span>
+            </button>
+            <ul id="guide-menu" class="pl-4 mt-2 space-y-2 hidden transition-all duration-300">
+              <!-- Fauna -->
+              <li>
+                <button id="fauna-button" class="w-full text-left text-stone-800 hover:text-red-700 flex justify-between items-center transition duration-300">
+                  Fauna
+                  <span id="fauna-icon" class="transition-transform duration-300">▼</span>
+                </button>
+                <ul id="fauna-menu" class="pl-4 mt-2 space-y-2 hidden transition-all duration-300">
+                  <li><a href="#" class="block text-stone-800 hover:text-red-700 transition duration-300">Mammals</a></li>
+                  <li><a href="#" class="block text-stone-800 hover:text-red-700 transition duration-300">Birds</a></li>
+                  <li><a href="#" class="block text-stone-800 hover:text-red-700 transition duration-300">Reptiles</a></li>
+                </ul>
+              </li>
+
+              <!-- Flora -->
+              <li>
+                <button id="flora-button" class="w-full text-left text-stone-800 hover:text-red-700 flex justify-between items-center transition duration-300">
+                  Flora
+                  <span id="flora-icon" class="transition-transform duration-300">▼</span>
+                </button>
+                <ul id="flora-menu" class="pl-4 mt-2 space-y-2 hidden transition-all duration-300">
+                  <li><a href="#" class="block text-stone-800 hover:text-red-700 transition duration-300">Trees</a></li>
+                  <li><a href="#" class="block text-stone-800 hover:text-red-700 transition duration-300">Flowers</a></li>
+                  <li><a href="#" class="block text-stone-800 hover:text-red-700 transition duration-300">Grasses</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="#" class="block text-stone-900 hover:text-red-700 transition duration-300">About</a></li>
+          <li><a href="#" class="block text-stone-900 hover:text-red-700 transition duration-300">Contact</a></li>
+          <li><a href="#" class="block text-stone-900 hover:text-red-700 transition duration-300">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Content-->
+  <section class="relative w-full h-screen">
+    <!-- Video Background -->
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
+        <iframe 
+            class="w-full h-full object-cover" 
+            src="https://youtu.be/b6-JVeidvoE" 
+            frameborder="0" 
+            allow="autoplay; fullscreen">
+        </iframe>
+        <!-- Dark Overlay -->
+        <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
+    </div>
+
+    <!-- Text Overlay -->
+    <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-center px-6">
+        <h1 class="text-white text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">The Wildlife Guide</h1>
+        <p class="text-white text-lg md:text-xl max-w-3xl drop-shadow-md">
+            Experience the ultimate adventure with expert-guided wildlife and birding safaris across Africa.
+            Discover the beauty of nature and immerse yourself in the wilderness.
+        </p>
+    </div>
+</section>
+  <script src="assets/js/scripts.js">
+
+  </script>
+</body>
+</html>
