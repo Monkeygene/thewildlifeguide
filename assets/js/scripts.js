@@ -75,3 +75,15 @@ function toggleFAQ(element) {
   let content = element.nextElementSibling;
   content.classList.toggle('hidden');
 }
+
+/* Image Changer */
+
+function changeImage() {
+  const folderPath = 'assets/images/changables/'; // Ensure trailing slash
+  const images = ['redbilledoxpeckersonrhinoback.png', 'whiterhino.png', 'southeryellowbilledhornbill.png', 'groundhornbill.png']; // Add your image filenames here
+  const randomImage = images[Math.floor(Math.random() * images.length)];
+  document.getElementById('dynamicImage').src = folderPath + randomImage;
+}
+
+setInterval(changeImage, 1800000); // Change image every 30 minutes (1800000ms)
+window.onload = changeImage; // Set initial image on load
