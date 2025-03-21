@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Enhanced viewport tag for notch devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Red-Chested Cuckoo</title>
+    
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Join The Wildlife Guide for thrilling African adventures! Explore wildlife, birding, and safari experiences across South and East Africa.">
+    
+    <!-- Default Favicon (Light Mode) -->
+<link rel="icon" href="assets/images/logo/thewildlifeguide-favicon-black.webp" type="image/webp" media="(prefers-color-scheme: light)">
+
+<!-- Dark Mode Favicon -->
+<link rel="icon" href="assets/images/logo/thewildlifeguide-favicon-white.webp" type="image/webp" media="(prefers-color-scheme: dark)">
+
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="African Adventures with The Wildlife Guide">
+    <meta property="og:description" content="Explore the wild with expert-guided safaris across Africa.">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:url" content="https://www.thewildlifeguide.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card for Better Social Media Preview -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="African Adventures with The Wildlife Guide">
+    <meta name="twitter:description" content="Expert-guided safaris & birding tours across Africa.">
+    <meta name="twitter:image" content="assets/images/twitter-image.jpg">
+    
+    <!-- Preload and Stylesheet -->
+    <link rel="preload" href="assets/css/styles.css" as="style">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    <!-- Apple Touch Icons & Manifest for Mobile Devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    
+    <!-- Mobile Web App Capabilities -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="The Wildlife Guide">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#000000">
+    
+    <!-- Format Detection -->
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- Resource Hint for Tailwind CSS CDN -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://www.thewildlifeguide.com">
+  </head>
+  
+
+<body>
+<!-- Navbar -->
+<nav class="bg-white h-[100px] flex items-center justify-between px-8 relative">
+  <!-- Title with logo and homepage link -->
+ <a href="index.html" class="flex items-center space-x-3 text-2xl font-bold text-stone-900 hover:text-red-700 transition duration-300">
+     <img src="assets/images/logo/thewildlifeguide-favicon-black.svg" alt="Logo" class="h-10 w-10"> 
+     <span>The Wildlife Guide</span>
+ </a>
+ 
+ <!-- Hamburger Button -->
+ <button id="menu-button" class="focus:outline-none" aria-label="Open menu">
+   <div class="space-y-1 transition-transform duration-300 ease-in-out">
+     <span class="block w-8 h-1 bg-stone-900 rounded transition-all duration-300" id="bar1"></span>
+     <span class="block w-8 h-1 bg-stone-900 rounded transition-all duration-300" id="bar2"></span>
+     <span class="block w-8 h-1 bg-stone-900 rounded transition-all duration-300" id="bar3"></span>
+   </div>
+ </button>
+
+ <!-- Sidebar -->
+ <div id="sidebar-overlay" class="hidden fixed inset-0 bg-black bg-opacity-30"></div>
+ 
+ <div id="sidebar" class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full lg:block transition-transform duration-300">
+   <div class="p-6">
+     <h2 class="text-xl font-bold mb-4">Menu</h2>
+     <ul class="space-y-3">
+       <!-- Experiences -->
+       <li>
+         <button id="experiences-button" class="w-full text-left text-stone-900 hover:text-red-700 flex justify-between items-center transition duration-300">
+           Experiences
+           <span id="experiences-icon" class="transition-transform duration-300">▼</span>
+         </button>
+         <ul id="experiences-menu" class="pl-4 mt-2 space-y-2 hidden transition-all duration-300">
+           <li><a href="kruger-national-park-safaris-classic.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Classic Kruger Safaris</a></li>
+           <li><a href="kruger-national-park-safaris-private.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Private Kruger Safaris</a></li>
+         </ul>
+       </li>
+
+       <!-- Guide -->
+       <li>
+         <button id="guide-button" class="w-full text-left text-stone-900 hover:text-red-700 flex justify-between items-center transition duration-300">
+           Guide
+           <span id="guide-icon" class="transition-transform duration-300">▼</span>
+         </button>
+         <ul id="guide-menu" class="pl-4 mt-2 space-y-2 hidden transition-all duration-300">
+           <!-- Fauna -->
+           <li>
+             <button id="fauna-button" class="w-full text-left text-stone-800 hover:text-red-700 flex justify-between items-center transition duration-300">
+               Fauna
+               <span id="fauna-icon" class="transition-transform duration-300">▼</span>
+             </button>
+             <ul id="fauna-menu" class="pl-4 mt-2 space-y-2 hidden transition-all duration-300">
+               <li><a href="mammals.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Mammals</a></li>
+               <li><a href="birds.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Birds</a></li>
+               <li><a href="reptiles.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Reptiles</a></li>
+             </ul>
+           </li>
+
+           <!-- Flora -->
+           <li>
+             <button id="flora-button" class="w-full text-left text-stone-800 hover:text-red-700 flex justify-between items-center transition duration-300">
+               Flora
+               <span id="flora-icon" class="transition-transform duration-300">▼</span>
+             </button>
+             <ul id="flora-menu" class="pl-4 mt-2 space-y-2 hidden transition-all duration-300">
+               <li><a href="#" class="block text-stone-800 hover:text-red-700 transition duration-300">Trees</a></li>
+               <li><a href="#" class="block text-stone-800 hover:text-red-700 transition duration-300">Flowers</a></li>
+               <li><a href="#" class="block text-stone-800 hover:text-red-700 transition duration-300">Grasses</a></li>
+             </ul>
+           </li>
+         </ul>
+       </li>
+
+       <li><a href="#" class="block text-stone-900 hover:text-red-700 transition duration-300">About</a></li>
+       <li><a href="#" class="block text-stone-900 hover:text-red-700 transition duration-300">Contact</a></li>
+       <li><a href="#" class="block text-stone-900 hover:text-red-700 transition duration-300">Blog</a></li>
+     </ul>
+   </div>
+ </div>
+</nav>
+
+<main class="max-w-5xl mx-auto px-4">
+  <section class="flex flex-col items-center">
+    <!-- Responsive Image Container -->
+    <div class="w-full max-w-[1420px] mx-auto">
+      <div class="w-full h-[220px] sm:h-[300px] md:h-[360px] lg:h-[440px] overflow-hidden">
+        <img src="assets/images/birds/red-chested-cuckoo/red-chested-cuckoo-perched-perfectly.jpg" 
+             alt="Red-Chested Cuckoo" 
+             class="w-full h-full object-cover">
+      </div>
+    </div>
+  
+    <!-- Responsive Title Section -->
+    <div class="w-full max-w-[1420px] mx-auto py-8 px-4">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-center">
+        Red-Chested Cuckoo
+      </h1>
+      <p class="text-md sm:text-2xl md:text-2xl text-center italic">
+        (Cuculus solitarius)
+      </p>
+    </div>
+  
+    <!-- Responsive Introduction -->
+    <div class="w-full max-w-[1420px] mx-auto px-4">
+      <p class="text-md sm:text-lg md:text-md text-center">
+        The Red-Chested Cuckoo (Cuculus solitarius) is a medium-sized bird known for its distinct call, often heard before it is seen. It features a sleek body with a red-brown chest, contrasting with its grayish upperparts. This species is widely distributed across sub-Saharan Africa and is known for its migratory habits. It prefers dense forests and woodlands, where it feeds mainly on caterpillars and insects.
+      </p>
+    </div>
+  </section>
+  
+ <!-- Identification -->
+<section class="flex flex-col md:flex-row items-center mt-8 py-12">
+  <div class="md:w-1/2 p-4 order-2 md:order-1">
+    <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-semibold py-4 text-center md:text-left">
+      Red-Chested Cuckoo Identification
+    </h2>
+    <p class="text-md sm:text-lg md:text-md mt-2 text-center md:text-left">
+      The Red-Chested Cuckoo is a medium-sized bird with a distinct chestnut-red underside and a grayish upper body. It has a slender, slightly curved bill, long tail, and striking yellow eye-ring. In flight, it displays a rapid wingbeat and a graceful, streamlined body. It is often recognized by its characteristic call, a repeated "piet-my-vrou" sound.
+    </p>
+  </div>
+  <div class="md:w-1/2 p-0 order-1 md:order-2">
+    <div class="w-full aspect-[3/4] overflow-hidden">
+      <img src="assets/images/birds/red-chested-cuckoo/red-chested-cuckoo-side-view.jpg" 
+           alt="Side view of Red-Chested Cuckoo" 
+           class="w-full h-full object-cover">
+    </div>
+  </div>
+</section>
+
+
+
+  
+ <!-- Distribution Section -->
+<section class="mt-4 px-4 max-w-[1420px] mx-auto">
+  <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-semibold text-center">
+    Distribution of the Red-Chested Cuckoo
+  </h2>
+  <div class="flex flex-col md:flex-row items-center mt-4">
+    <div class="md:w-1/2 p-4">
+      <img src="assets/birds/red-chested-cuckoo/red-chested-cuckoo-distribution.png" 
+           alt="Distribution Map" 
+           class="w-full h-auto object-contain">
+    </div>
+    <div class="md:w-1/2 p-4 text-center md:text-left">
+      <h3 class="text-lg sm:text-xl md:text-2xl font-bold mt-4 underline">
+        Countries
+      </h3>
+      <p class="text-base sm:text-lg md:text-md mt-2">
+        The Red-Chested Cuckoo is found in various regions across sub-Saharan Africa, including South Africa, Zimbabwe, Botswana, Namibia, Zambia, Malawi, Tanzania, Kenya, and Uganda. It prefers forested and woodland habitats.
+      </p>
+      <h3 class="text-lg sm:text-xl md:text-2xl font-bold mt-4 underline">
+        Migration
+      </h3>
+      <p class="text-base sm:text-lg md:text-md mt-2">
+        This species is a partial migrant, with populations in southern Africa moving northwards during the austral winter. Some individuals remain in their breeding territories year-round, while others migrate to central and eastern Africa in search of more favorable conditions.
+      </p>
+    </div>
+  </div>
+</section>
+  
+<!-- Additional Image Section -->
+<section class="flex justify-center items-center my-12 px-0 max-w-[1420px] mx-auto">
+  <div class="w-full">
+    <div class="aspect-video overflow-hidden">
+      <img src="assets/images/birds/red-chested-cuckoo/red-chested-cuckoo-perched-on-broken-tree.jpg" 
+           alt="Red-Chested Cuckoo perched on a broken tree" 
+           class="w-full h-full object-cover">
+    </div>
+  </div>
+</section>
+
+  
+<!-- Habitat Section -->
+<section class="mt-4 px-4 max-w-[1420px] mx-auto">
+  <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-semibold text-center py-4">
+    Red-Chested Cuckoo Habitat
+  </h2>
+  <p class="text-base sm:text-lg md:text-md text-center">
+    The Red-Chested Cuckoo prefers dense forests, woodlands, and riverine vegetation. It is commonly found in subtropical and tropical regions, where it thrives in areas with plenty of tree cover and a rich insect population.
+  </p>
+</section>
+  
+<!-- Feeding & Diet Section -->
+<section class="mt-4 px-4 max-w-[1420px] mx-auto">
+  <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-semibold text-center py-4">
+    Feeding & Diet of the Red-Chested Cuckoo
+  </h2>
+  <p class="text-base sm:text-lg md:text-md text-center">
+    The Red-Chested Cuckoo primarily feeds on insects, with caterpillars being its favorite prey. It also consumes beetles, grasshoppers, and other small invertebrates. This bird forages among trees and shrubs, using its keen eyesight to locate prey before swooping down to catch it.
+  </p>
+</section>
+  
+<!-- Plumage Section -->
+<section class="mt-4 px-4 max-w-[1420px] mx-auto">
+  <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-semibold text-center pt-4">
+    Plumage of the Red-Chested Cuckoo
+  </h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-2 text-center md:text-left">
+    <div>
+      <h3 class="text-lg sm:text-xl md:text-2xl font-medium mt-2 py-1 underline">
+        Adult
+      </h3>
+      <p class="text-base sm:text-lg md:text-md">
+        Adult males have a rich chestnut-red breast and belly, with a slate-gray head, back, and wings. Their eye-ring is a striking yellow, and they have a sleek, slightly curved beak. Females resemble males but may have a slightly paler coloration.
+      </p>
+    </div>
+    <div>
+      <h3 class="text-lg sm:text-xl md:text-2xl font-medium mt-2 py-1 underline">
+        Juvenile
+      </h3>
+      <p class="text-base sm:text-lg md:text-md">
+        Juveniles are duller in coloration, with a more mottled chestnut and gray pattern. They often have a scaly appearance due to pale feather edges and lack the pronounced yellow eye-ring seen in adults. Immature birds gradually acquire the adult coloration over time.
+      </p>
+    </div>
+  </div>
+</section>
+  
+<!-- Additional Image Section (Dense Woodland) -->
+<section class="flex justify-center items-center my-12 max-w-[1420px] mx-auto">
+  <div class="w-full max-w-4xl">
+    <div class="w-full aspect-video overflow-hidden">
+      <img src="assets/images/birds/red-chested-cuckoo/red-chested-cuckoo-in-dense-woodland.jpg" 
+           alt="Red-Chested Cuckoo in dense woodland" 
+           class="w-full h-full object-cover">
+    </div>
+  </div>
+</section>
+
+  
+<!-- Behaviour Section -->
+<section class="mt-10 px-4 max-w-[1420px] mx-auto">
+  <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold text-center">
+    Behaviour of the Red-Chested Cuckoo
+  </h2>
+  <div class="flex justify-center items-center mt-4">
+    <div class="w-full max-w-3xl">
+      <div class="text-center md:text-left">
+        <h3 class="text-lg sm:text-xl md:text-2xl font-medium mt-4 underline">
+          Social
+        </h3>
+        <p class="text-base sm:text-lg md:text-md py-6">
+          The Red-Chested Cuckoo is generally solitary and elusive, often remaining hidden in dense foliage. It is more often heard than seen, thanks to its distinctive call. Unlike many other birds, it does not form flocks but maintains an independent existence.
+        </p>
+        
+        <h3 class="text-lg sm:text-xl md:text-2xl font-medium mt-2 underline">
+          Breeding
+        </h3>
+        <p class="text-base sm:text-lg md:text-md py-6">
+          This species is a brood parasite, meaning it does not build its own nest but instead lays eggs in the nests of other bird species. The most common hosts include robin-chats and thrushes. The cuckoo chick hatches earlier than the host’s young and often removes the other eggs or chicks from the nest, ensuring it receives all parental care.
+        </p>
+        
+        <h3 class="text-lg sm:text-xl md:text-2xl font-medium mt-2 underline">
+          Call
+        </h3>
+        <p class="text-base sm:text-lg md:text-md py-6">
+          The Red-Chested Cuckoo is well known for its distinctive call, often described as a repetitive and melodious “piet-my-vrou” sound. This call is a key identifier of the species, particularly during the breeding season when males vocalize frequently to establish territory and attract mates.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+
+
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
