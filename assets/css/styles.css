@@ -6,7 +6,3 @@ p {
   font-family: 'Figtree', sans-serif;
 }
 
-   /* Hide YouTube controls */
-   iframe {
-    pointer-events: none;
-}

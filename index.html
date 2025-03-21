@@ -1,66 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Enhanced viewport tag for notch devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>The Wildlife Guide</title>
+    
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Join The Wildlife Guide for thrilling African adventures! Explore wildlife, birding, and safari experiences across South and East Africa.">
+    
+    <!-- Default Favicon (Light Mode) -->
+<link rel="icon" href="assets/images/logo/thewildlifeguide-favicon-black.webp" type="image/webp" media="(prefers-color-scheme: light)">
 
-  <title>The Wildlife Guide</title>
+<!-- Dark Mode Favicon -->
+<link rel="icon" href="assets/images/logo/thewildlifeguide-favicon-white.webp" type="image/webp" media="(prefers-color-scheme: dark)">
 
-  <!-- Meta Description for SEO -->
-  <meta name="description" content="Join The Wildlife Guide for thrilling African adventures! Explore wildlife, birding, and safari experiences across South and East Africa.">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="African Adventures with The Wildlife Guide">
+    <meta property="og:description" content="Explore the wild with expert-guided safaris across Africa.">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:url" content="https://www.thewildlifeguide.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card for Better Social Media Preview -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="African Adventures with The Wildlife Guide">
+    <meta name="twitter:description" content="Expert-guided safaris & birding tours across Africa.">
+    <meta name="twitter:image" content="assets/images/twitter-image.jpg">
+    
+    <!-- Preload and Stylesheet -->
+    <link rel="preload" href="assets/css/styles.css" as="style">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    <!-- Apple Touch Icons & Manifest for Mobile Devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    
+    <!-- Mobile Web App Capabilities -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="The Wildlife Guide">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#000000">
+    
+    <!-- Format Detection -->
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- Resource Hint for Tailwind CSS CDN -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://www.thewildlifeguide.com">
+  </head>
   
-  <!-- Favicon -->
-  <link rel="icon" href="assets/images/logo/thewildlifeguide-favicon-white.webp" type="image/webp">
 
-  <!-- Open Graph for Social Sharing -->
-  <meta property="og:title" content="African Adventures with The Wildlife Guide">
-  <meta property="og:description" content="Explore the wild with expert-guided safaris across Africa.">
-  <meta property="og:image" content="assets/images/og-image.jpg">
-  <meta property="og:url" content="https://www.thewildlifeguide.com">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card for Better Social Media Preview -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="African Adventures with The Wildlife Guide">
-  <meta name="twitter:description" content="Expert-guided safaris & birding tours across Africa.">
-  <meta name="twitter:image" content="assets/images/twitter-image.jpg">
-
-  <!-- Preload Stylesheet -->
-  <link rel="preload" href="assets/css/styles.css" as="style">
-  <link rel="stylesheet" href="assets/css/styles.css">
-
-  <!-- Google Fonts -->
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
-
-  <!--Apple Touch Icons & Manifest for Mobile Devices-->
-
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-<link rel="manifest" href="assets/site.webmanifest">
-
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- CSS -->
-   <link rel="stylesheet" href="assets/css/styles.css">
-
-  <!-- TAGS -->
-
-   <!-- Canonical Tag -->
-  <link rel="canonical" href="https://www.thewildlifeguide.com">
-
-
-
-</head>
 <body>
   <!-- Navbar -->
   <nav class="bg-white h-[100px] flex items-center justify-between px-8 relative">
@@ -141,23 +149,40 @@
     </div>
   </nav>
 
-  <section class="w-full h-[840px] flex flex-col justify-center items-center text-center px-4 
-  md:h-[700px] sm:h-auto sm:py-12">
-<!-- Responsive Image Box -->
-<div class="bg-gray-300 overflow-hidden lg:w-[980px] h-[450px]">
-<img id="dynamicImage" src="assets/images/changables/redbilledoxpeckersonrhinoback.png" alt="Kruger Safaris best selection of photos taken in Kruger National Park safari" class="w-full h-full object-cover">
-</div>
+  <!-- Hero Section Container -->
+  <section class="flex flex-col items-center">
+    <!-- Responsive Video Container -->
+    <div class="w-full max-w-[1420px] mx-auto">
+      <div class="w-full h-[220px] sm:h-[300px] md:h-[360px] lg:h-[440px] bg-black flex items-center justify-center">
+        <!-- Video element with object-cover to fill its container -->
+        <video class="w-full h-full object-cover" loop muted autoplay>
+          <source src="path-to-your-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
 
-<div class="py-4">
-<!-- Heading -->
-<h1 class="text-4xl font-bold text-gray-800 sm:text-5xl pt-12 pb-6">The Wildlife Guide</h1>
+    <!-- Responsive Hero Text Section -->
+    <div class="w-full max-w-[1420px] mx-auto flex flex-col items-center justify-center h-[200px] sm:h-[250px] md:h-[300px] lg:h-[400px] mt-6 px-4">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4">The Wildlife Guide</h1>
+      <p class="text-md sm:text-base md:text-lg lg:text-lg text-gray-700 text-center">
+        Thinking of going on an African birding journey, guided by a passionate birding expert who knows the birds of Africa. Nyoni Safaris specialises in tailor-made Africa birding tours, featuring exceptional birding safaris from Southern and East Africa. Let me create the perfect tailor-made birding tour for you, personalised to match your pace and interests.
+      </p>
+    </div>
+  </section>
 
-<!-- Paragraph -->
-<p class="text-lg text-black mt-4 max-w-4xl sm:max-w-xlg">
-Explore the wonders of nature with expert guidance. Discover breathtaking landscapes, rare wildlife, and unforgettable experiences on our thrilling safari adventures.
-</p>
-</div>
-</section>
+  <!-- Image box -->
+  <div class="flex justify-center items-center h-auto lg:h-[600px] px-4 py-4 lg:px-0 lg:px-0">
+    <div class="w-full max-w-[980px]">
+      <img src="assets/images/changables/groundhornbill.png" alt="Description of the image" class="w-full h-auto lg:h-[500px] object-cover">
+      <p class="mt-[5px] text-xs text-left">Southern Ground Hornbill walking in group, Kruger National Park</p>
+    </div>
+  </div>
+  
+  
+  
+    
+
 
  
   <script src="assets/js/scripts.js">
