@@ -37,12 +37,84 @@
     <priority>0.84</priority>
   </url>
 
+    <!-- Classic Kruger Safaris page -->
+  <url>
+    <loc>https://www.thewildlifeguidesafari.com/kruger-classic-safaris.html</loc>
+    <lastmod>2025-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+    <!-- Photographic Kruger Safaris page -->
+  <url>
+    <loc>https://www.thewildlifeguidesafari.com/kruger-photographic-safaris.html</loc>
+    <lastmod>2025-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
   <!-- Blog landing page -->
   <url>
     <loc>https://www.thewildlifeguidesafari.com/blog.html</loc>
     <lastmod>2025-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
+  </url>
+
+   <!-- Big Five Kruger National Park blog post -->
+  <url>
+    <loc>https://www.thewildlifeguidesafari.com/big-five-kruger-national-park.html</loc>
+    <lastmod>2025-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+<!-- Big Five Kruger National Park blog post -->
+   <url>
+    <loc>https://www.thewildlifeguidesafari.com/kruger-national-park-birds.html</loc>
+    <lastmod>2025-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+<!-- Big Five Kruger National Park blog post -->
+   <url>
+    <loc>https://www.thewildlifeguidesafari.com/kruger-national-park-flowers.html</loc>
+    <lastmod>2025-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+<!-- Big Five Kruger National Park blog post -->
+   <url>
+    <loc>https://www.thewildlifeguidesafari.com/kruger-national-park-grass.html</loc>
+    <lastmod>2025-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+    <!-- Big Five Kruger National Park blog post -->
+  <url>
+    <loc>https://www.thewildlifeguidesafari.com/kruger-national-park-mammals.html</loc>
+    <lastmod>2025-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+<!-- Big Five Kruger National Park blog post -->
+   <url>
+    <loc>https://www.thewildlifeguidesafari.com/kruger-national-park-reptiles.html</loc>
+    <lastmod>2025-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Big Five Kruger National Park blog post -->
+   <url>
+    <loc>https://www.thewildlifeguidesafari.com/kruger-national-park-trees.html</loc>
+    <lastmod>2025-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
 
 </urlset>
