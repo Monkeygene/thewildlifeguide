@@ -69,14 +69,20 @@
   </head>
   
 
-<body>
+<body class="bg-white paragraph-font">
   <!-- Navbar -->
-  <nav class="bg-white h-[100px] flex items-center justify-between px-8 relative">
+  <nav class="bg-white h-[50px] lg:h-[100px] flex items-center justify-between px-8 lg:px-[150px] relative">
+
      <!-- Title with logo and homepage link -->
-    <a href="index.html" class="flex items-center space-x-3 text-2xl font-bold text-stone-900 hover:text-red-700 transition duration-300">
-        <img src="assets/images/logo/thewildlifeguide-favicon-black.svg" alt="Logo" class="h-10 w-10"> 
-        <span>The Wildlife Guide</span>
-    </a>
+     <a href="index.html"
+     class="flex items-center space-x-3 text-base lg:text-2xl font-bold text-stone-900 hover:text-red-700 transition duration-300">
+    <!-- hide the logo below lg, show it at lg+ -->
+    <img src="assets/images/logo/thewildlifeguide-favicon-black.svg"
+         alt="Logo"
+         class="h-10 w-10 hidden lg:block">
+    <!-- text stays but is smaller by default, upsizes at lg -->
+    <span>The Wildlife Guide</span>
+  </a>
     
     <!-- Hamburger Button -->
     <button id="menu-button" class="focus:outline-none" aria-label="Open menu">
@@ -101,8 +107,8 @@
               <span id="experiences-icon" class="transition-transform duration-300">▼</span>
             </button>
             <ul id="experiences-menu" class="pl-4 mt-2 space-y-2 hidden transition-all duration-300">
-              <li><a href="kruger-national-park-safaris-classic.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Classic Kruger Safaris</a></li>
-              <li><a href="kruger-national-park-safaris-private.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Private Kruger Safaris</a></li>
+              <li><a href="kruger-classic-safaris.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Classic Safaris</a></li>
+              <li><a href="kruger-photographic-safaris.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Photographic Safaris</a></li>
             </ul>
           </li>
 
@@ -120,9 +126,9 @@
                   <span id="fauna-icon" class="transition-transform duration-300">▼</span>
                 </button>
                 <ul id="fauna-menu" class="pl-4 mt-2 space-y-2 hidden transition-all duration-300">
-                  <li><a href="mammals.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Mammals</a></li>
-                  <li><a href="birds.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Birds</a></li>
-                  <li><a href="reptiles.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Reptiles</a></li>
+                  <li><a href="kruger-national-park-mammals.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Mammals</a></li>
+                  <li><a href="kruger-national-park-birds.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Birds</a></li>
+                  <li><a href="kruger-national-park-reptiles.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Reptiles</a></li>
                 </ul>
               </li>
 
@@ -133,43 +139,46 @@
                   <span id="flora-icon" class="transition-transform duration-300">▼</span>
                 </button>
                 <ul id="flora-menu" class="pl-4 mt-2 space-y-2 hidden transition-all duration-300">
-                  <li><a href="#" class="block text-stone-800 hover:text-red-700 transition duration-300">Trees</a></li>
-                  <li><a href="#" class="block text-stone-800 hover:text-red-700 transition duration-300">Flowers</a></li>
-                  <li><a href="#" class="block text-stone-800 hover:text-red-700 transition duration-300">Grasses</a></li>
+                  <li><a href="kruger-national-park-trees.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Trees</a></li>
+                  <li><a href="kruger-national-park-flowers.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Flowers</a></li>
+                  <li><a href="kruger-national-park-grass.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Grass</a></li>
                 </ul>
               </li>
             </ul>
           </li>
 
-          <li><a href="#" class="block text-stone-900 hover:text-red-700 transition duration-300">About</a></li>
-          <li><a href="#" class="block text-stone-900 hover:text-red-700 transition duration-300">Contact</a></li>
-          <li><a href="#" class="block text-stone-900 hover:text-red-700 transition duration-300">Blog</a></li>
+          <li><a href="about.html" class="block text-stone-900 hover:text-red-700 transition duration-300">About</a></li>
+          <li><a href="contact.html" class="block text-stone-900 hover:text-red-700 transition duration-300">Contact</a></li>
+          <li><a href="contact.html" class="block text-stone-900 hover:text-red-700 transition duration-300">Blog</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section Container -->
-  <section class="flex flex-col items-center">
-    <!-- Responsive Video Container -->
-    <div class="w-full max-w-[1420px] mx-auto">
-      <div class="w-full h-[220px] sm:h-[300px] md:h-[360px] lg:h-[440px] bg-black flex items-center justify-center">
-        <!-- Video element with object-cover to fill its container -->
-        <video class="w-full h-full object-cover" loop muted autoplay>
-          <source src="path-to-your-video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-
-    <!-- Responsive Hero Text Section -->
-    <div class="w-full max-w-[1420px] mx-auto flex flex-col items-center justify-center h-[200px] sm:h-[250px] md:h-[300px] lg:h-[400px] mt-6 px-4">
-      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4">The Wildlife Guide</h1>
-      <p class="text-md sm:text-base md:text-lg lg:text-lg text-gray-700 text-center">
-        Thinking of going on an African birding journey, guided by a passionate birding expert who knows the birds of Africa. Nyoni Safaris specialises in tailor-made Africa birding tours, featuring exceptional birding safaris from Southern and East Africa. Let me create the perfect tailor-made birding tour for you, personalised to match your pace and interests.
-      </p>
+   <!-- Hero Image Container -->
+   <section class="max-w-[1420px] mx-auto px-4">
+    <div class="w-full overflow-hidden">
+      <img
+        src="assets/images/birds/groundhornbill.jpg"
+        alt="Birds on Africa Birding Tours posed in Header Photo for Index Page"
+        class="w-full h-[220px] sm:h-[300px] md:h-[360px] lg:h-[440px] object-cover"
+      >
     </div>
   </section>
+
+<!-- Responsive Hero Text Section -->
+<section class="py-4 lg:py-24">
+<div class="container mx-auto px-4 flex flex-col items-center justify-center py-10">
+  <div class="max-w-5xl text-center">
+    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+      Ultimate Kruger National Park Safaris in South Africa
+    </h1>
+    <p class="text-md sm:text-base md:text-lg lg:text-lg text-gray-700">
+      Discover the ultimate Kruger National Park safari experience in South Africa, where untamed wilderness meets world‑class wildlife viewing. From thrilling morning game drives in search of the Big Five to luxurious bush camps under a star‑filled sky, our safaris immerse you in the heart of Africa’s most iconic national park. Book your adventure today and witness elephants, lions, rhinos, leopards, and buffalo roam free in their natural habitat.
+    </p>
+  </div>
+</div>
+</section>
 
   <!-- Image box -->
   <div class="flex justify-center items-center h-auto lg:h-[600px] px-4 py-4 lg:px-0 lg:px-0">

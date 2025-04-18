@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Enhanced viewport tag for notch devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Primary page title (≤ 60 chars) -->
+    <title>Trees of Kruger National Park - The Wildlife Guide</title>
+
+    <!-- Meta Description (156 chars, ≤160) -->
+    <meta
+      name="description"
+      content="Discover the diverse trees of Kruger National Park in South Africa with The Wildlife Guide. Learn about iconic species, conservation, and top forest trails."
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      href="assets/images/logo/thewildlifeguide-favicon-black.webp"
+      type="image/webp"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="icon"
+      href="assets/images/logo/thewildlifeguide-favicon-white.webp"
+      type="image/webp"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Trees of Kruger National Park - The Wildlife Guide"
+    />
+    <meta
+      property="og:description"
+      content="Discover the diverse trees of Kruger National Park in South Africa. Learn about iconic species, conservation, and best forest trails."
+    />
+    <meta
+      property="og:image"
+      content="https://www.thewildlifeguide.com/assets/images/kruger-trees-og.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://www.thewildlifeguide.com/kruger-national-park-trees.html"
+    />
+    <meta property="og:type" content="article" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Trees of Kruger National Park - The Wildlife Guide"
+    />
+    <meta
+      name="twitter:description"
+      content="Discover the diverse trees of Kruger National Park in South Africa. Learn about iconic species, conservation, and best forest trails."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.thewildlifeguide.com/assets/images/kruger-trees-og.jpg"
+    />
+
+    <!-- Stylesheets & Fonts -->
+    <link rel="preload" href="assets/css/styles.css" as="style" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Mobile/Web App -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="The Wildlife Guide" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Tailwind (via CDN) -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href="https://www.thewildlifeguide.com/kruger-national-park-trees.html"
+    />
+  </head>
+
+<body class="bg-white paragraph-font">
+  <!-- Navbar -->
+  <nav class="bg-white h-[50px] lg:h-[100px] flex items-center justify-between px-8 lg:px-[150px] relative">
+
+     <!-- Title with logo and homepage link -->
+     <a href="index.html"
+     class="flex items-center space-x-3 text-base lg:text-2xl font-bold text-stone-900 hover:text-red-700 transition duration-300">
+    <!-- hide the logo below lg, show it at lg+ -->
+    <img src="assets/images/logo/thewildlifeguide-favicon-black.svg"
+         alt="Logo"
+         class="h-10 w-10 hidden lg:block">
+    <!-- text stays but is smaller by default, upsizes at lg -->
+    <span>The Wildlife Guide</span>
+  </a>
+    
+    <!-- Hamburger Button -->
+    <button id="menu-button" class="focus:outline-none" aria-label="Open menu">
+      <div class="space-y-1 transition-transform duration-300 ease-in-out">
+        <span class="block w-8 h-1 bg-stone-900 rounded transition-all duration-300" id="bar1"></span>
+        <span class="block w-8 h-1 bg-stone-900 rounded transition-all duration-300" id="bar2"></span>
+        <span class="block w-8 h-1 bg-stone-900 rounded transition-all duration-300" id="bar3"></span>
+      </div>
+    </button>
+
+    <!-- Sidebar -->
+    <div id="sidebar-overlay" class="hidden fixed inset-0 bg-black bg-opacity-30"></div>
+    
+    <div id="sidebar" class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full lg:block transition-transform duration-300">
+      <div class="p-6">
+        <h2 class="text-xl font-bold mb-4">Menu</h2>
+        <ul class="space-y-3">
+          <!-- Experiences -->
+          <li>
+            <button id="experiences-button" class="w-full text-left text-stone-900 hover:text-red-700 flex justify-between items-center transition duration-300">
+              Experiences
+              <span id="experiences-icon" class="transition-transform duration-300">▼</span>
+            </button>
+            <ul id="experiences-menu" class="pl-4 mt-2 space-y-2 hidden transition-all duration-300">
+              <li><a href="kruger-classic-safaris.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Classic Safaris</a></li>
+              <li><a href="kruger-photographic-safaris.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Photographic Safaris</a></li>
+            </ul>
+          </li>
+
+          <!-- Guide -->
+          <li>
+            <button id="guide-button" class="w-full text-left text-stone-900 hover:text-red-700 flex justify-between items-center transition duration-300">
+              Guide
+              <span id="guide-icon" class="transition-transform duration-300">▼</span>
+            </button>
+            <ul id="guide-menu" class="pl-4 mt-2 space-y-2 hidden transition-all duration-300">
+              <!-- Fauna -->
+              <li>
+                <button id="fauna-button" class="w-full text-left text-stone-800 hover:text-red-700 flex justify-between items-center transition duration-300">
+                  Fauna
+                  <span id="fauna-icon" class="transition-transform duration-300">▼</span>
+                </button>
+                <ul id="fauna-menu" class="pl-4 mt-2 space-y-2 hidden transition-all duration-300">
+                  <li><a href="kruger-national-park-mammals.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Mammals</a></li>
+                  <li><a href="kruger-national-park-birds.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Birds</a></li>
+                  <li><a href="kruger-national-park-reptiles.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Reptiles</a></li>
+                </ul>
+              </li>
+
+              <!-- Flora -->
+              <li>
+                <button id="flora-button" class="w-full text-left text-stone-800 hover:text-red-700 flex justify-between items-center transition duration-300">
+                  Flora
+                  <span id="flora-icon" class="transition-transform duration-300">▼</span>
+                </button>
+                <ul id="flora-menu" class="pl-4 mt-2 space-y-2 hidden transition-all duration-300">
+                  <li><a href="kruger-national-park-trees.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Trees</a></li>
+                  <li><a href="kruger-national-park-flowers.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Flowers</a></li>
+                  <li><a href="kruger-national-park-grass.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Grass</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="about.html" class="block text-stone-900 hover:text-red-700 transition duration-300">About</a></li>
+          <li><a href="contact.html" class="block text-stone-900 hover:text-red-700 transition duration-300">Contact</a></li>
+          <li><a href="contact.html" class="block text-stone-900 hover:text-red-700 transition duration-300">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End of Nav-->
+
+<!-- Vintage‑Style Hero Text Section -->
+<section class="py-12 lg:py-12">
+  <div class="container mx-auto px-6 flex flex-col items-center text-center">
+    <div class="max-w-4xl">
+      <!-- Main Title -->
+      <h1 class="font-serif uppercase tracking-widest text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-black mb-3 py-4">
+        <span class="inline-block px-6">Trees of Kruger National Park</span>
+      </h1>
+      <!-- Subtitle / Byline -->
+      <p class="font-serif italic text-lg sm:text-xl text-black">by
+        <a href="index.html" class="text-amber-700 hover:underline">
+        The Wildlife Guide
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Descriptive Paragraph Section (Responsive Text Sizes) -->
+<section class="py-8 lg:py-16 bg-beige-50">
+  <div class="container mx-auto px-6">
+    <div class="max-w-4xl mx-auto">
+      <p class="font-serif text-base sm:text-lg md:text-xl lg:text-xl text-black leading-relaxed">
+        Kruger National Park’s landscapes are defined by an extraordinary tapestry of trees, each one playing its part in the ancient rhythms of the bush. From the fever trees that glow chartreuse beside hidden pans, to the gnarled leadwoods whose silver bark tells of centuries gone by, these giants offer refuge and sustenance to countless creatures. In the dry season, the mopane woodlands crackle with life as elephants strip their leaves, while winter mornings find marula fruits scattered like amber jewels beneath the branches. Wander beneath these canopies, and you’ll discover not just shade, but the living history of the African veld.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Tree Cards Grid (h3 titles turned into links) -->
+<section class="py-8 lg:py-16 bg-beige-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      
+      <!-- Card 1 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-200">
+          <img src="assets/images/trees/baobab-drawing-card.png" alt="Baobab Tree Sketch" class="w-full h-full object-cover">
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">
+            <a href="#" class="text-black hover:underline underline-offset-2">Baobab (Adansonia digitata</a>)
+          </h3>
+          <p class="text-gray-700 text-sm">
+            The <a href="#" class="text-amber-700 hover:underline">baobab tree</a>, known as the “Tree of Life,” towers with a swollen trunk that stores water. Ancient and iconic, it provides shelter, food, and legend, shaping both the savanna ecosystem and African cultural traditions.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-200">
+          <img src="assets/images/trees/buffalo-thorn-drawing-card.png" alt="Buffalo Thorn Tree Sketch" class="w-full h-full object-cover">
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">
+            <a href="#" class="text-black hover:underline">
+              Buffalo Thorn (Ziziphus mucronata)
+            </a>
+          </h3>
+          <p class="text-gray-700 text-sm">
+            The <a href="#" class="text-amber-700 hover:underline">buffalo thorn</a>, with its zigzag branches and paired thorns one straight, one hooked symbolizes life’s journey. Valued for shade, resilience, and cultural meaning, it offers fruit for wildlife and protection in Kruger’s diverse bushveld landscapes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-200">
+          <img src="assets/images/trees/false-marula-drawing-card.png" alt="False Marula Tree Sketch" class="w-full h-full object-cover">
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">
+            <a href="#" class="text-black hover:underline">
+              False Marula (Lannea schweinfurthii)
+            </a>
+          </h3>
+          <p class="text-gray-700 text-sm">
+            The <a href="#" class="text-amber-700 hover:underline">false marula</a> resembles its famous cousin but lacks the sweet fruit. Found in woodlands and savannas, it’s prized for its hardy nature, rough bark, and ability to support browsing wildlife, quietly shaping Kruger’s natural tapestry.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-200">
+          <div class="h-48 bg-gray-200">
+            <img src="assets/images/trees/fever-tree-drawing-card.png" alt="Buffalo Thorn Tree Sketch" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">
+            <a href="#" class="text-black hover:underline">
+              Fever Tree (Vachellia xanthophloea)
+            </a>
+          </h3>
+          <p class="text-gray-700 text-sm">
+            The <a href="#" class="text-amber-700 hover:underline">fever tree</a> stands out with its eerie yellow-green bark, thriving near water in Kruger’s lowveld. Once wrongly blamed for malaria, it now supports rich biodiversity and adds striking beauty to the park’s riverine landscapes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-200"></div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">
+            <a href="#" class="text-black hover:underline">
+              Green Thorn (Senegalia senegal)
+            </a>
+          </h3>
+          <p class="text-gray-700 text-sm">
+            The <a href="#" class="text-amber-700 hover:underline">green thorn</a>, a hardy acacia of Kruger’s arid zones, bears pale bark and fine leaflets. Its pods feed wildlife, and its sap once yielded gum arabic. Tough and tenacious, it thrives where few trees dare.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-200"></div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">
+            <a href="#" class="text-black hover:underline">
+              Jackalberry (Diospyros mespiliformis)
+            </a>
+          </h3>
+          <p class="text-gray-700 text-sm">
+            The <a href="#" class="text-amber-700 hover:underline">jackalberry tree</a>, tall and evergreen, thrives on Kruger’s riverbanks. Its sweet, nutritious fruit attracts elephants, birds, and, yes—jackals. With dense wood and deep roots, it symbolizes strength, stability, and sustains life through every dry season.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-200"></div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">
+            <a href="#" class="text-black hover:underline">
+              Knob Thorn (Senegalia nigrescens)
+            </a>
+          </h3>
+          <p class="text-gray-700 text-sm">
+            The <a href="#" class="text-amber-700 hover:underline">knob thorn</a> rises boldly in Kruger’s savannas, its bark studded with tough, rounded knobs. Blooming with creamy flowers in spring, it feeds giraffes and bees alike, playing a vital role in the dry bush ecosystem.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-200"></div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">
+            <a href="#" class="text-black hover:underline">
+              Lala Palm (Hyphaene coriacea)
+            </a>
+          </h3>
+          <p class="text-gray-700 text-sm">
+            The <a href="#" class="text-amber-700 hover:underline">lala palm</a>, Kruger’s only indigenous palm, fans out along eastern riverbanks. Its fruit feeds baboons and birds, while its fibrous leaves serve traditional weaving. Resilient and elegant, it brings a tropical flair to the savanna.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-200"></div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">
+            <a href="#" class="text-black hover:underline">
+              Leadwood (Combretum imberbe)
+            </a>
+          </h3>
+          <p class="text-gray-700 text-sm">
+            The <a href="#" class="text-amber-700 hover:underline">leadwood</a> stands ancient and unyielding, its pale, ghostly bark marking Kruger’s landscapes. With wood so dense it sinks in water, it endures centuries—even after death—offering shelter, perch, and silent testimony to time’s passing.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-200"></div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">
+            <a href="#" class="text-black hover:underline">
+              Magic Guarri (Euclea divinorum)
+            </a>
+          </h3>
+          <p class="text-gray-700 text-sm">
+            The <a href="#" class="text-amber-700 hover:underline">magic guarri</a>, a hardy shrub or small tree, thrives in Kruger’s varied soils. Its glossy leaves and small berries feed birds and mammals, while its name hints at traditional uses in cleansing, healing, and quiet superstition.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-200"></div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">
+            <a href="#" class="text-black hover:underline">
+              Marula (Sclerocarya birrea)
+            </a>
+          </h3>
+          <p class="text-gray-700 text-sm">
+            The <a href="#" class="text-amber-700 hover:underline">marula tree</a>, beloved in Kruger, bursts with juicy fruit that delights elephants, monkeys, and humans alike. Revered for its nutritional and cultural value, it fuels legends, brews, and life itself across the sunlit African savanna.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 12 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-200"></div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">
+            <a href="#" class="text-black hover:underline">
+              Mopane (Colophospermum mopane)
+            </a>
+          </h3>
+          <p class="text-gray-700 text-sm">
+            <a href="#" class="text-amber-700 hover:underline">Mopane trees</a> blanket Kruger’s northern plains with butterfly-shaped leaves and coppery hues. Adapted to heat and drought, they nourish elephants and mopane worms alike, forming a resilient, life-sustaining woodland that hums with ecological importance and seasonal transformation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 13 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-200"></div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">
+            <a href="#" class="text-black hover:underline">
+              Red Bushwillow (Combretum apiculatum)
+            </a>
+          </h3>
+          <p class="text-gray-700 text-sm">
+            The <a href="#" class="text-amber-700 hover:underline">red bushwillow</a>, common in Kruger’s mixed woodlands, flaunts fiery autumn leaves and winged seed pods. Its dense wood resists fire, while its foliage feeds browsers, making it a hardy, vital presence in the park’s wild mosaic.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 14 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-200"></div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">
+            <a href="#" class="text-black hover:underline">
+              Sausage Tree (Kigelia africana)
+            </a>
+          </h3>
+          <p class="text-gray-700 text-sm">
+            The <a href="#" class="text-amber-700 hover:underline">sausage tree</a> dazzles with bold red flowers and hefty, sausage-shaped fruit dangling like ornaments. Found near Kruger’s rivers, it nourishes wildlife and inspires folklore, blending beauty, utility, and mystique beneath its wide, leafy canopy.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 15 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-200"></div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">
+            <a href="#" class="text-black hover:underline">
+              Silver Cluster Leaf (Terminalia sericea)
+            </a>
+          </h3>
+          <p class="text-gray-700 text-sm">
+            The <a href="#" class="text-amber-700 hover:underline">silver cluster leaf</a> glows in Kruger’s sunlight, its velvety, silvery leaves shimmering in the breeze. Thriving in sandy soils, it provides shelter and browse, forming thickets that support diverse life and whisper of resilience in the bush.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 16 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-200"></div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">
+            <a href="#" class="text-black hover:underline">
+              Tamboti (Spirostachys africana)
+            </a>
+          </h3>
+          <p class="text-gray-700 text-sm">
+            The <a href="#" class="text-amber-700 hover:underline">tamboti tree</a>, with its graceful form and spicy-sweet scent, hides a toxic secret—its milky sap can be harmful. Found in Kruger’s woodlands, it supports wildlife yet challenges humans, balancing beauty with a touch of danger.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 17 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-200"></div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">
+            <a href="#" class="text-black hover:underline">
+              Umbrella Thorn (Vachellia tortilis)
+            </a>
+          </h3>
+          <p class="text-gray-700 text-sm">
+            The <a href="#" class="text-amber-700 hover:underline">umbrella thorn</a>, with its flat, spreading crown, defines Kruger’s classic savanna silhouette. Armed with long white thorns, it shelters wildlife and offers nutritious pods, embodying both protection and sustenance in the park’s sun-drenched open landscapes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 18 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-200"></div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">
+            <a href="#" class="text-black hover:underline">
+              Velvet Raisin (Grewia flavescens)
+            </a>
+          </h3>
+          <p class="text-gray-700 text-sm">
+            The <a href="#" class="text-amber-700 hover:underline">velvet raisin</a>, a modest shrub or small tree, dots Kruger’s bushveld with rough bark and soft leaves. Its small, sweet fruits attract birds and antelope, quietly enriching the ecosystem with nourishment, cover, and seasonal charm.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 19 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-200"></div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">
+            <a href="#" class="text-black hover:underline">
+              Weeping Boer‑bean (Schotia brachypetala)
+            </a>
+          </h3>
+          <p class="text-gray-700 text-sm">
+            The <a href="#" class="text-amber-700 hover:underline">weeping boer-bean</a> bursts into crimson bloom, dripping nectar that draws birds, bees, and monkeys. Found in Kruger’s rocky soils, it offers shade and sustenance, its vivid flowers and sturdy form making it a beloved seasonal spectacle.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 20 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="h-48 bg-gray-200"></div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">
+            <a href="#" class="text-black hover:underline">
+              Wild Teak (Pterocarpus angolensis)
+            </a>
+          </h3>
+          <p class="text-gray-700 text-sm">
+            <a href="#" class="text-amber-700 hover:underline">Wild teak</a>, with its flaking bark and golden autumn leaves, stands tall in Kruger’s woodlands. Valued for its strong, beautiful timber, it also feeds browsers and brightens the bush, blending practicality with seasonal bursts of color.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<script src="assets/js/scripts.js">
+
+</script>
+</body>
+</html>
