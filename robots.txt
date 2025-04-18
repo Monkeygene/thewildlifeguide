@@ -1,0 +1,8 @@
+# robots.txt for The Wildlife Guide Safari
+User-agent: *
+# Allow everything by default
+Disallow:
+
+# If you have an XML sitemap, point to it:
+Sitemap: https://www.thewildlifeguidesafari.com/sitemap.xml
+
