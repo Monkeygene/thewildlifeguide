@@ -1,82 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- Enhanced viewport tag for notch devices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <title>The Wildlife Guide</title>
-    
-    <!-- Meta Description for SEO -->
-    <meta name="description" content="Join The Wildlife Guide for thrilling African adventures! Explore wildlife, birding, and safari experiences across South and East Africa.">
-    
-    <!-- Default Favicon (Light Mode) -->
-<link rel="icon" href="assets/images/logo/thewildlifeguide-favicon-black.webp" type="image/webp" media="(prefers-color-scheme: light)">
+<head>
+  <!-- 1) Charset & viewport -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Dark Mode Favicon -->
-<link rel="icon" href="assets/images/logo/thewildlifeguide-favicon-white.webp" type="image/webp" media="(prefers-color-scheme: dark)">
+  <!-- 2) Title & SEO -->
+  <title>Private Kruger National Park Safaris - The Wildlife Guide</title>
+  <meta name="description" content="Experience exclusive private safaris in Kruger National Park, Kruger rest camps, expert guides, and unforgettable wildlife encounters await.">
+  <meta name="keywords" content="Kruger National Park safaris, private safari tours, wildlife guide, South Africa safaris, luxury game drives">
+  <meta name="robots"      content="index,follow">
+  <meta name="author"      content="Nyoni Safaris">
+  <link rel="canonical"    href="https://www.thewildlifeguide.com/">
 
-    
-    <!-- Open Graph for Social Sharing -->
-    <meta property="og:title" content="African Adventures with The Wildlife Guide">
-    <meta property="og:description" content="Explore the wild with expert-guided safaris across Africa.">
-    <meta property="og:image" content="assets/images/og-image.jpg">
-    <meta property="og:url" content="https://www.thewildlifeguide.com">
-    <meta property="og:type" content="website">
-    
-    <!-- Twitter Card for Better Social Media Preview -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="African Adventures with The Wildlife Guide">
-    <meta name="twitter:description" content="Expert-guided safaris & birding tours across Africa.">
-    <meta name="twitter:image" content="assets/images/twitter-image.jpg">
-    
-    <!-- Preload and Stylesheet -->
-    <link rel="preload" href="assets/css/styles.css" as="style">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    
-    <!-- Apple Touch Icons & Manifest for Mobile Devices -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <link rel="manifest" href="assets/site.webmanifest">
-    
-    <!-- Mobile Web App Capabilities -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="The Wildlife Guide">
-    
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#000000">
-    
-    <!-- Format Detection -->
-    <meta name="format-detection" content="telephone=no">
-    
-    <!-- Resource Hint for Tailwind CSS CDN -->
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Canonical Tag -->
-    <link rel="canonical" href="https://www.thewildlifeguide.com">
+  <!-- 3) Theme color -->
+  <meta name="theme-color"  content="#ffffff">
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F2CBZHQXX1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- 4) Open Graph -->
+  <meta property="og:title"       content="Private Kruger National Park Safaris - The Wildlife Guide">
+  <meta property="og:description" content="Experience exclusive private safaris in Kruger National Park, Kruger rest camps, expert guides, and unforgettable wildlife encounters await.">
+  <meta property="og:image"       content="https://www.thewildlifeguide.com/assets/og-image.jpg">
+  <meta property="og:url"         content="https://www.thewildlifeguide.com/">
+  <meta property="og:type"        content="website">
 
-  gtag('config', 'G-F2CBZHQXX1');
-</script>
-  </head>
+  <!-- 5) Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Private Kruger National Park Safaris - The Wildlife Guide">
+  <meta name="twitter:description" content="Experience exclusive private safaris in Kruger National Park, Kruger rest camps, expert guides, and unforgettable wildlife encounters await.">
+  <meta name="twitter:image"       content="https://www.thewildlifeguide.com/assets/og-image.jpg">
+
+  <!-- 6) Favicon & Touch Icons -->
+  <link rel="icon" type="image/webp" sizes="32x32" href="assets/images/logo/thewildlifeguide-favicon-white.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+
+  <!-- 7) Preconnect / Preload -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+
+  <!-- 8) CSS & Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preload" href="/assets/css/styles.css" as="style">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  
+
+  <!-- 9) JSON-LD (schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "The Wildlife Guide",
+    "url": "https://www.thewildlifeguide.com/",
+    "logo": "https://www.thewildlifeguide.com/assets/images/logo/thewildlifeguide-favicon-white.webp",
+    "image": "https://www.thewildlifeguide.com/assets/og-image.jpg",
+    "description": "Experience exclusive private safaris in Kruger National Park, Kruger rest camps, expert guides, and unforgettable wildlife encounters await.",
+    "telephone": "+351964872495",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "15 Eric Funcke Street",
+      "addressLocality": "Tzaneen",
+      "addressRegion": "Limpopo",
+      "postalCode": "0850",
+      "addressCountry": "ZA"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "16:00"
+    },
+    "sameAs": [
+      "https://www.facebook.com/thewildlifeguide",
+      "https://www.youtube.com/@thewildlifeguide"
+    ],
+    "priceRange": "$$"
+  }
+  </script>
+
+  <!-- 10) Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F2CBZHQXX1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-F2CBZHQXX1');
+  </script>
+</head>
+
   
 
 <body class="bg-white paragraph-font">
